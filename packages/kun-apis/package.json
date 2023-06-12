@@ -1,0 +1,30 @@
+{
+  "name": "kun-apis",
+  "version": "1.0.0",
+  "description": "OpenAPI client for ",
+  "keywords": [
+    "fetch",
+    "typescript",
+    "openapi-client",
+    "openapi-generator"
+  ],
+  "license": "Unlicense",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "whatwg-fetch": "^3.0.0",
+    "es6-promise": "^4.2.4",
+    "url-parse": "1.4.4"
+  },
+  "peerDependencies": {
+    "regenerator-runtime": "^0.13.9"
+  },
+  "devDependencies": {
+    "@types/url-parse": "1.4.3",
+    "regenerator-runtime": "^0.13.9",
+    "typescript": "^4.3.5"
+  }
+}

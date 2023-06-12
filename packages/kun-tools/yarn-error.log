@@ -1,0 +1,59 @@
+Arguments: 
+  /usr/local/bin/node /Users/wisers/.yarn/bin/yarn.js install
+
+PATH: 
+  /usr/local/opt/python@3.7/bin:/Users/wisers/.yarn/bin:/Users/wisers/.config/yarn/global/node_modules/.bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  14.16.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND npm.wisers.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+
+npm manifest: 
+  {
+    "name": "kun-tools",
+    "version": "1.0.0",
+    "description": "shared model",
+    "main": "index.js",
+    "scripts": {
+      "test": "jest",
+      "tsc": "tsc  -p tsconfig.json --declaration --emitDeclarationOnly",
+      "clean": "rimraf ./built",
+      "prebuild": "tsc --declaration --emitDeclarationOnly",
+      "babel": "babel --extensions '.ts' ./src -d ./built",
+      "build": "npm run clean && npm run tsc; npm run babel"
+    },
+    "author": "caedman",
+    "license": "ISC",
+    "dependencies": {
+      "cross-fetch": "latest",
+      "dayjs": "^1.10.4",
+      "query-string": "^7.0.0",
+      "core-js": "^3.11.0"
+    },
+    "devDependencies": {
+      "@tsconfig/create-react-app": "^1.0.2",
+      "typescript": "^4.2.4",
+      "@babel/runtime": "^7.13.17",
+      "@babel/cli": "^7.13.16",
+      "@babel/core": "^7.13.16",
+      "@babel/plugin-proposal-class-properties": "7.13.0",
+      "@babel/preset-env": "^7.13.15",
+      "rimraf":"^3.0.2",
+      "@babel/preset-typescript": "^7.13.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

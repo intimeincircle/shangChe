@@ -1,0 +1,28 @@
+{
+  "name": "kun-chat",
+  "version": "1.0.0",
+  "description": "shared model",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "tsc": "tsc --declaration --emitDeclarationOnly",
+    "babel": "babel --extensions '.ts,.tsx' ./src -d ./built",
+    "build": "npm run tsc && npm run  babel"
+  },
+  "author": "caedman",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/plugin-proposal-class-properties": "7.13.0",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-typescript": "^7.13.0",
+    "@babel/runtime": "^7.13.17",
+    "@tsconfig/create-react-app": "^1.0.2",
+    "react": "^17.0.2",
+    "@types/react": "^17.0.3",
+    "typescript": "^4.1.3"
+  }
+}

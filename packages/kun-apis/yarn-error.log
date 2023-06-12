@@ -1,0 +1,60 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn build
+
+PATH: 
+  /Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/bin:/Users/rang/.local/bin:/miniconda3/bin:/Users/rang/opt/miniconda3/bin:/Users/rang/opt/miniconda3/condabin:/usr/local/opt/sqlite/bin:/usr/local/opt/openssl@1.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/rang/.cargo/bin:/opt/maven/bin:/opt/chromedriver:/Applications/Sublime Text.app/Contents/SharedSupport/bin:/Volumes/BOOT/x-tools/arm-unknown-linux-gnueabi/bin:/Users/rang/Library/Application Support/Coursier/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  16.14.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/rang/rang/m1/fe/packages/kun-apis/package.json: Unexpected string in JSON at position 547
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "kun-apis",
+    "version": "1.0.0",
+    "description": "OpenAPI client for ",
+    "keywords": [
+      "fetch",
+      "typescript",
+      "openapi-client",
+      "openapi-generator"
+    ],
+    "license": "Unlicense",
+    "main": "./dist/index.js",
+    "typings": "./dist/index.d.ts",
+    "scripts": {
+      "build": "tsc"
+    },
+    "dependencies": {
+      "whatwg-fetch": "^3.0.0",
+      "es6-promise": "^4.2.4",
+      "url-parse": "^1.4.3"
+    },
+    "peerDependencies": {
+      "regenerator-runtime": "^0.13.9"
+    },
+    "devDependencies": {
+      "@types/url-parse": "1.4.4"
+      "regenerator-runtime": "^0.13.9",
+      "typescript": "^3.9.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

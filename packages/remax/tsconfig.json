@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "rootDir": "src",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "lib": ["DOM", "ES2015"],
+    "typeRoots": [
+      "typings/**/*",
+      "node_modules/@tybys/jweixin/typings/jweixin.d.ts"
+    ]
+  },
+  "include": [
+    "src/**/*",
+  ]
+}

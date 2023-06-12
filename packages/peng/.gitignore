@@ -1,0 +1,18 @@
+# Dependencies
+node_modules
+.idea
+
+# Testing
+coverage
+
+# Production
+public/*
+!public/favicon.ico
+!public/logo192.png
+!public/logo512.png
+!public/manifest.json
+
+# Misc
+.DS_Store
+*.log
+

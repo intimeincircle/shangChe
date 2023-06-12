@@ -1,0 +1,1 @@
+export const getUniLanguage = (s: string) => s === 'zh' ? 'zh_CN' : 'en_US'
